@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppData" representedClassName="AppData" syncable="YES" codeGenerationType="class">
+        <attribute name="calendarDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="careType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="insuranceType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reason" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AppointmentPreferences" representedClassName="AppointmentPreferences" syncable="YES" codeGenerationType="class">
+        <attribute name="careType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="AppData" predicateString="careType CONTAINS &quot;&quot;"/>
+    <elements>
+        <element name="AppData" positionX="-63" positionY="-9" width="128" height="120"/>
+        <element name="AppointmentPreferences" positionX="-63" positionY="-18" width="128" height="60"/>
+    </elements>
+</model>
